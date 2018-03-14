@@ -1,0 +1,10 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+  - imageName: kubernetes-php-example
+    workspace: .
+  local: {}
+deploy:
+  kubectl:
+    manifests:
